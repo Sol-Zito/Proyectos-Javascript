@@ -1,0 +1,131 @@
+body {
+  width: 80%;
+  background-color: antiquewhite;
+  font-size: 18px;
+  margin: auto;
+}
+
+div.principal {
+  margin: auto;
+}
+div.contenedor {
+  width: 70%;
+  margin: auto;
+}
+div#hidden {
+  font-size: 30px;
+  color: #FFF;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 5px inset #96734a;
+  border-radius: 10px;
+  padding-top: 45px;
+  margin: 10px 2px;
+  letter-spacing: 7px;
+}
+div.keyboard {
+  text-align: center;
+}
+div.divAnimacion {
+  overflow: hidden;
+  text-align: -webkit-center;
+  position: relative;
+  width: 80%;
+  height: 200px;
+  margin: auto;
+}
+div.divAnimacion p.cabeza {
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  border: solid 4px black;
+}
+div.divAnimacion p.dorso {
+  width: 5px;
+  height: 42px;
+  background-color: black;
+}
+div.divAnimacion p.brazoI {
+  position: absolute;
+  top: 55px;
+  left: 410px;
+  font-size: x-large;
+  font-weight: 900;
+}
+div.divAnimacion p.brazoD {
+  position: absolute;
+  top: 55px;
+  left: 429px;
+  font-size: x-large;
+  font-weight: 900;
+}
+div.divAnimacion p.piernaI {
+  position: absolute;
+  top: 89px;
+  left: 411px;
+  font-size: x-large;
+  font-weight: 900;
+}
+div.divAnimacion p.piernaD {
+  position: absolute;
+  top: 88px;
+  left: 428px;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+button.btn1 {
+  color: black;
+  background: orange;
+  padding: 5px;
+  margin: 5px;
+  font-weight: 400;
+}
+button.btn1:hover {
+  font-weight: 600;
+  padding: 5px;
+  background-color: #d39d5f;
+}
+button.keys {
+  border: 3px outset #96734a;
+  color: #FFF;
+  text-align: center;
+  font-size: 26px;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 2px auto;
+  text-indent: -5px;
+  border-radius: 20%;
+}
+button:disabled {
+  color: #996633;
+  background-color: rgba(49, 41, 41, 0.4);
+}
+
+p.intentos {
+  height: 36px;
+  color: #900;
+  border: 5px solid #996633;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 100%;
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
+@-webkit-keyframes ahorcado {}
+
+@keyframes ahorcado {}
+@media screen and (max-width: 768px) {
+  div.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 4px;
+    margin: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
