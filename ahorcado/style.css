@@ -12,6 +12,9 @@ div.contenedor {
   width: 70%;
   margin: auto;
 }
+div.movile {
+  display: none;
+}
 div#hidden {
   font-size: 30px;
   color: #FFF;

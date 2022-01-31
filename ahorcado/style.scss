@@ -20,6 +20,10 @@ div{
         width: 70%;
         margin: auto;
     }
+    
+    &.movile{
+        display: none;
+    }
 
     &#hidden{
         font-size: 30px;
