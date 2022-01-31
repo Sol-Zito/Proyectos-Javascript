@@ -14,7 +14,13 @@ let brazoD = document.getElementsByClassName('brazoD')
 let piernaI = document.getElementsByClassName('piernaI')
 let piernaD = document.getElementsByClassName("piernaD")
 
-function juegoNuevo(){
+function juegoNuevo() {
+    reiniciarValores();
+    manejarEventosBotonesConLetras();
+    obternePalabraSecreta();
+}
+
+function obternePalabraSecreta() {
     const xhttp = new XMLHttpRequest();
     xhttp.open('GET', 'https://random-word-api.herokuapp.com/word?number=1');
     xhttp.onreadystatechange = function() {
@@ -24,6 +30,9 @@ function juegoNuevo(){
         }
     }
     xhttp.send();
+}
+
+function manejarEventosBotonesConLetras() {
     arrDeBotonesLetras.forEach((elemento) => {
         elemento.removeAttribute('disabled')
         elemento.onclick = () => {
@@ -32,12 +41,14 @@ function juegoNuevo(){
             elemento.setAttribute('disabled', 'true');
         }
     });
+}
+
+function reiniciarValores() {
     const btnLlamapi = document.querySelector('#llamapi');
     btnLlamapi.innerText = 'Nueva Palabra';
-    totalIntentosFallidos = 0;
     elementoIntentos.innerText = fraseOriginalElementoIntentos;
-   
-    console.log('arrBotones', arrDeBotonesLetras);
+    divHidden.innerHTML = '';
+    totalIntentosFallidos = 0;
 }
 
 function mostrarLetras(palabra) {

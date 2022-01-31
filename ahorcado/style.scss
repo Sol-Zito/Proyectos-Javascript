@@ -23,14 +23,14 @@ div{
 
     &#hidden{
         font-size: 30px;
-    color: #FFF;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 5px inset #96734a;
-    border-radius: 10px;
-    padding-top: 45px;
-    margin: 10px 2px;
-    letter-spacing: 7px;
+        color: #FFF;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 5px inset #96734a;
+        border-radius: 10px;
+        padding-top: 45px;
+        margin: 10px 2px;
+        letter-spacing: 7px;
     }
 
     &.keyboard{
@@ -142,8 +142,6 @@ p{
     }
 }
 
-
-
 .invisible{
     display: none;
 }
@@ -159,11 +157,32 @@ p{
 @media screen and (max-width: 768px) {
     div{
         &.wrap{
-            display: flex;
-            flex-wrap: wrap;
-            width: 80%;
+            display: inline-block;
+            width: 100%;
             gap: 4px;
             margin: auto;
+        }
+
+        &.invisibility{
+         display: none;
+        }
+
+        &.movile{
+            display: inline-block;
+        }
+
+        &#hidden{
+            display: table;
+            width: 100%;
+            font-size: 26px;
+            margin: 10px 0px;
+        }
+    }
+
+
+    p{
+        &.intentos{
+            display: table-cell;
         }
     }
 }

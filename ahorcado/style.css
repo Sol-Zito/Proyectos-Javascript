@@ -122,10 +122,25 @@ p.intentos {
 @keyframes ahorcado {}
 @media screen and (max-width: 768px) {
   div.wrap {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
+    display: inline-block;
+    width: 100%;
     gap: 4px;
     margin: auto;
+  }
+  div.invisibility {
+    display: none;
+  }
+  div.movile {
+    display: inline-block;
+  }
+  div#hidden {
+    display: table;
+    width: 100%;
+    font-size: 26px;
+    margin: 10px 0px;
+  }
+
+  p.intentos {
+    display: table-cell;
   }
 }/*# sourceMappingURL=style.css.map */
