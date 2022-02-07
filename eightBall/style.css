@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(127, 255, 212);
+    width: 90%;
+    margin: auto;
+}
+
+.respuesta{
+    width: 100%;
+    border: burlywood 2px solid;
+}
+
+.btn{
+    color: chocolate;
+    font-weight: 700;
+    border: double;
+}
+
+:disabled{
+    color: coral;
+    font-weight: 700;
+    border: groove;
+}
+
+.input{
+    width: 65%;
+    font-size: 20;
+}
+
+@media screen and (max-width: 768px) {
+
+    .input{
+        width: 60%;
+    }
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        align-items: center;
+    }    
+}

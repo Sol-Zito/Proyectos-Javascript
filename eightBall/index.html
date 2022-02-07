@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME EIGHTBALL</title>
+</head>
+<body>
+    
+    <header>
+        <h1>GAME EIGHTBALL</h1>
+    </header>
+    <div class="contenedor">
+        
+        <form action="">
+            <label for="pregunta">Pregunta y te contestaremos</label>
+            <!-- agrega pregunta -->
+            <input type="text" pattern="[A-Z]" onkeyup="controlBtn(event)" id="pregunta" placeholder="ingrese pregunta" class="input">
+            <!-- comienza juego -->
+            <input type="reset" value="submit" class="btn boton" onclick="comienzoJuego()" disabled= "true" >
+        </form>        
+    </div>
+    <div>
+        <!-- agrega respuesta -->
+        <p class="respuesta">Cual sera la respuesta?....</p>
+        
+        <!-- reset juego -->
+        <input value="Nueva pregunta" type="reset" class="reset btn" onClick="nuevaPregunta()" >
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
