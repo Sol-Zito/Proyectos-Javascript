@@ -1,0 +1,231 @@
+/* boton*/
+.contenedorBtn {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.estiladoBtn {
+    background: #dfe5d7;
+    width: 7%;
+    height: 2em;
+    cursor: pointer;
+}
+
+.estiladoBtn.active {
+    background: #272424;
+
+    .icono {
+        color: #dfe5d7;
+    }
+}
+
+.dark {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.light {
+    border-radius: 5px 0px 0px 5px;
+}
+
+// clock
+
+body {
+    width: 95%;
+    margin: auto;
+    background: linear-gradient(to right, hsl(115, 74%, 59%), hsl(66, 61%, 64%));
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+body.darkMode{
+    background: linear-gradient(to right, hsl(0deg 0% 0%), #333);
+}
+
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    border: 3px solid black;
+    position: relative;
+}
+
+.clock.darkMode{
+    background-color: #333;
+}
+
+
+.clock .number {
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 1.5rem;
+}
+
+.clock .number.darkMode{
+    color: #dfe5d7;
+}
+
+
+.clock .number1 {
+    --rotation: 30deg;
+}
+
+.clock .number2 {
+    --rotation: 60deg;
+}
+
+.clock .number3 {
+    --rotation: 90deg;
+}
+
+.clock .number4 {
+    --rotation: 120deg;
+}
+
+.clock .number5 {
+    --rotation: 150deg;
+}
+
+.clock .number6 {
+    --rotation: 180deg;
+}
+
+.clock .number7 {
+    --rotation: 210deg;
+}
+
+.clock .number8 {
+    --rotation: 240deg;
+}
+
+.clock .number9 {
+    --rotation: 270deg;
+}
+
+.clock .number10 {
+    --rotation: 300deg;
+}
+
+.clock .number11 {
+    --rotation: 330deg;
+}
+
+.clock .hand {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+
+.clock::after {
+    content: '';
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.clock .hand.second {
+    width: 3px;
+    height: 45%;
+    background-color: red;
+}
+
+.clock .hand.second.darkMode{
+    background-color: darkslategrey;
+}
+
+
+.clock .hand.minute {
+    width: 7px;
+    height: 40%;
+    background-color: black;
+}
+
+.clock .hand.hour {
+    width: 10px;
+    height: 35%;
+    background-color: black;
+}
+
+// div date
+
+div#date{
+    border: thin solid rgb(29, 13, 117);
+    padding: 7px;
+    width: 21%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+div#date.darkMode{
+    color: #cdd4c3;
+}
+
+
+// Scroll
+
+.contenedorG::-webkit-scrollbar{
+    width: 50px;
+    background-color: #33c138;   
+    cursor: pointer;
+}
+
+.contenedorG::-webkit-scrollbar-thumb{
+    background-color: #b5bcac; 
+    border-radius: 15px;
+    border-right: 2px solid;
+}
+
+
+
+// media btn
+@media (max-width: 775px) {
+    .contenedorBtn {
+        width: 90%;
+    }
+
+    .estiladoBtn {
+        width: 12%;
+    }
+    div#date{
+        width: 40%;
+    }
+}
+
+@media (min-width: 1440px) {
+    div#date{
+        width: 23%;
+    }
+}

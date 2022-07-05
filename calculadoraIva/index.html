@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de IVA</title>
+</head>
+
+<body>
+    <h1>Calculadora de factura con IVA</h1>
+    <div class="contenedor">
+        <form name="calculoForm" id="form">
+            <input type="text" name="montoIngresado" pattern="[0-9]" placeholder="Ingrese monto:" id="monto">
+            <input type="text" name="montoIVAIngresado" pattern="[0-9]" placeholder="Ingrese monto de iva:" id="montoIva">        
+        </form>      
+    
+        <button type="submit"  id="btn-submit">Calcular factura</button>
+        <p id="montoTotal"></p>
+    </div>   
+    <script src="calculadoraIva.js"></script>
+</body>
+</html>
