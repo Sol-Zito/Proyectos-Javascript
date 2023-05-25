@@ -1,0 +1,41 @@
+body{
+    width: 80%;
+    background-color: rgb(235, 190, 132);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    align-content: center;
+}
+
+.lista{
+    width: 50%;
+    border-radius: 12px 12px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    gap: 8px;
+    align-items: center;
+}
+
+input.nuevaTarea{
+    background: bottom;
+    width: 98%;
+    font-size: 17px;
+}
+
+span.labelNuevaTarea{
+    background: bottom;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+button.btnNuevaTarea{
+    background-color: rgb(52, 186, 141);
+    border-radius: 20%;
+    margin-bottom: 5px;
+    font-size: 17px;
+}

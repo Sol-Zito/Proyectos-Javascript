@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(187, 216, 207);
+    
+}
+
+div{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+input{
+    font-size: 18px;
+}
+
+button{
+    border: 2px solid;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 8px;
+    color: black;
+    font-weight: 600;
+    background-color: rgb(208 158 95);
+}

@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(223, 202, 175);
+    box-sizing: border-box;
+}
+
+.tablero{
+    width: 40%;
+    margin: auto;
+    border: 10px black solid;
+    background-color: white;
+    aspect-ratio: 1/1;
+
+}
+
+.fila{
+    width: 100%;
+
+}
+
+.cuadrado{
+    width: calc(100% / 10);
+    aspect-ratio: 1/1;
+}
+
+.crear{
+    padding: 7px;
+    font-size: 17px;
+    font-weight: 700;
+    border: 3px solid;
+    margin: 20px;
+    background-color: antiquewhite;  
+}
+
+.black{
+    background-color: black;
+}
